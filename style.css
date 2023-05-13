@@ -48,8 +48,8 @@ main{
 
 .sidebar ul li a:hover{
     color: var(--active);
+    font-size: 0.7em;
 }
-
 
 /* Sidebar styling end  */
 
@@ -60,7 +60,7 @@ main{
 
 /* Home section styling start  */
 #main{
-    background-color: yellow;
+    background-color: white;
     width: 100vw;
     height: 100vh;
     display: flex;
