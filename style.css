@@ -14,31 +14,58 @@
     padding: 0;
 }
 
-.container{
+main{
     display: flex;
 }
 
+/* Sidebar styling start  */
 .sidebar{
     background-color: var(--gray);
     color: var(--active);
     display: flex;
     flex-direction: column;
     justify-content:center;
+    align-items: center;
     gap: 2vh;
     font-family: 'Fira Sans', sans-serif;
     width: 5vw;
     height: 100vh;
+    position: fixed;
 }
 
-.main{
-    /* background-color: yellow; */
-    width: 95vw;
+.sidebar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8vh;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color: var(--nav-element);
+}
+
+.sidebar ul li a:hover{
+    color: var(--active);
+}
+
+/* Sidebar styling end  */
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Home section styling start  */
+#main{
+    background-color: yellow;
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
 }
 
-.info{
+#info{
     width: 80vw;
     height: 40vh;
     margin-top: 2vh;
@@ -99,3 +126,37 @@
 .pic img{
     height: 40vh;
 }
+/* Main section styling end  */
+
+/* About section styling start  */
+#about{
+    height: 100vh;
+    width: 100vw;
+    background-color: red;
+}
+/* About section styling end  */
+
+/* Skills section styling start  */
+#skills{
+    height: 100vh;
+    width: 100vw;
+    background-color: blue;
+}
+/* Skills section styling end  */
+
+/* Projects section styling start  */
+#projects{
+    height: 100vh;
+    width: 100vw;
+    background-color: yellow;
+}
+/* Projects section styling end  */
+
+/* Contact section styling start  */
+#contact{
+    height: 100vh;
+    width: 100vw;
+    background-color: red;
+}
+/* Contact section styling end  */
+

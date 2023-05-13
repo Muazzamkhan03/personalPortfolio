@@ -6,45 +6,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muazzam Khan - Software Engineering student, Web developer, Programmer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
+    <main>
+
+        <!-- Start sidebar  -->
         <div class="sidebar">
-            Muazzam Khan
+            
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Skills</li>
-                <li>Projects</li>
-                <li>Contact</li>
+                <li class="home-btn" data-active="Home"><a href='#main'><i class="fa-solid fa-house"></i></a></li>
+                <li class="about-btn" data-active="About me"><a href='#about'><i class="fa-regular fa-user"></i></a></li>
+                <li class="skills-btn" data-active="Skills"><a href='#skills'><i class="fa-solid fa-screwdriver-wrench"></i></a></li>
+                <li class="projects-btn" data-active="Projects"><a href='#projects'><i class="fa-regular fa-eye"></i></a></li>
+                <li class="contact-btn" data-active="Contact me"><a href='#contact'><i class="fa-regular fa-envelope"></i></a></li>
             </ul>
         </div>
-        <!-- Start main -->
-        <div class="main">
-            <!-- Start info  -->
-            <div class="info">
-                <!-- Start info-container  -->
-                <div class="info-container">
-                    <div class="intro">Hi, I am</div>
-                    <div class="name">Muazzam Khan</div>
-                    <div class="quality">Software Engineering student</div>
-                    <div class="more-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, officia!</div>
-                    <button class="cv">Download CV</button>
+        <!-- End sidebar  -->
+        
+        <!-- Start container  -->
+        <div class="container">
+            
+            <!-- Start main -->
+            <div id="main">
+                <!-- Start info  -->
+                <div id="info">
+                    <!-- Start info-container  -->
+                    <div class="info-container">
+                        <div class="intro">Hi, I am</div>
+                        <div class="name">Muazzam Khan</div>
+                        <div class="quality">Software Engineering student</div>
+                        <div class="more-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, officia!</div>
+                        <button class="cv">Download CV</button>
+                    </div>
+                    <!-- End info-container  -->
+                    <!-- Start pic  -->
+                    <div class="pic">
+                        <img src="img.png" alt="pic">
+                    </div>
+                    <!-- End pic  -->
                 </div>
-                <!-- End info-container  -->
-                <!-- Start pic  -->
-                <div class="pic">
-                    <img src="img.png" alt="pic">
-                </div>
-                <!-- End pic  -->
+                <!-- End info  -->
             </div>
-            <!-- End info  -->
-        </div>
-        <!-- End main  -->
-    </div>
-    <script src="script.js"></script>
-</body>
+            <!-- End main  -->
+            
+            <!-- Start About  -->
+            <div id="about">
+                
+            </div>
+            <!-- End About  -->
+            
+            <!-- Start Skills  -->
+            <div id="skills">
+                
+            </div>
+            <!-- End Skills  -->
 
-</html>
+            <!-- Start Projects  -->
+            <div id="projects">
+                
+            </div>
+            <!-- End Projects  -->
+
+            <!-- Start Contact  -->
+            <div id="contact">
+                
+            </div>
+            <!-- End Contact  -->
+        </div>
+        <!-- End Container  -->
+    </main>
+    
+    
+    <script src="script.js"></script>
+    </body>
+    
+    </html>
