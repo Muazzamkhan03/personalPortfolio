@@ -4,6 +4,9 @@
 
 :root{
     --background : rgb(11,44,67);
+    --gray: rgb(24,24,24);
+    --nav-element: rgb(75,75,76);
+    --active: rgb(252,215,51);
 }
 
 *{
@@ -16,7 +19,8 @@
 }
 
 .sidebar{
-    background-color: red;
+    background-color: var(--gray);
+    color: var(--active);
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -27,7 +31,7 @@
 }
 
 .main{
-    background-color: yellow;
+    /* background-color: yellow; */
     width: 95vw;
     height: 100vh;
     display: flex;
@@ -35,12 +39,13 @@
 }
 
 .info{
-    width: 90vw;
-    height: 50vh;
+    width: 80vw;
+    height: 40vh;
     margin-top: 2vh;
-    background-color:green;
+    /* background-color:green; */
     display: flex;
     justify-content: space-between;
+    margin-top: 20vh;
 }
 
 .info-container{
@@ -51,6 +56,7 @@
     justify-content: center;
     box-sizing: border-box;
     padding: 2vw;
+    padding-left: 5vw;
     font-family: 'Source Code Pro', monospace;
 }
 
@@ -67,4 +73,29 @@
 .quality{
     font-size: 2vh;
     font-family: 'Source Code Pro', monospace;
+}
+
+.more-about{
+    margin-top: 1vh;
+    font-size: 2vh;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.cv{
+    margin-top: 2vh;
+    padding: 1vh;
+    width: 10vw;
+    border: 0.2em solid var(--active);
+    color: var(--active);
+    background-color: transparent;
+}
+
+.cv:hover{
+    background-color: var(--active);
+    color: var(--gray);
+    cursor: pointer;
+}
+
+.pic img{
+    height: 40vh;
 }
