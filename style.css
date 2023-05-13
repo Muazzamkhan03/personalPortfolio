@@ -60,7 +60,7 @@ main{
 
 /* Home section styling start  */
 #main{
-    background-color: white;
+    background-color: var(--background);
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -134,7 +134,7 @@ main{
 #about{
     height: 100vh;
     width: 100vw;
-    background-color: red;
+    background-color: var(--background);
 }
 /* About section styling end  */
 
@@ -142,7 +142,7 @@ main{
 #skills{
     height: 100vh;
     width: 100vw;
-    background-color: blue;
+    background-color: var(--background);
 }
 /* Skills section styling end  */
 
@@ -150,7 +150,7 @@ main{
 #projects{
     height: 100vh;
     width: 100vw;
-    background-color: yellow;
+    background-color: var(--background);
 }
 /* Projects section styling end  */
 
@@ -158,7 +158,7 @@ main{
 #contact{
     height: 100vh;
     width: 100vw;
-    background-color: red;
+    background-color: var(--background);
 }
 /* Contact section styling end  */
 
