@@ -3,11 +3,19 @@
 
 
 :root{
-    --background : rgb(11,44,67);
-    --gray: rgb(24,24,24);
-    --nav-element: rgb(75,75,76);
-    --active: rgb(252,215,51);
+    --primary : #121930;
+    --secondary: #1e2a3a;
+    --tertiary: #60759c;
+    --active: #e7c711;
+    --text: #cccccc;
+    --light-blue: #4fb3f6;
+    --light-pink: #FFB6C1;
+    --light-brown: #d2b48c;
+    --white: #ffff;
+    
 }
+
+
 
 *{
     margin: 0;
@@ -20,7 +28,7 @@ main{
 
 /* Sidebar styling start  */
 .sidebar{
-    background-color: var(--gray);
+    background-color: var(--secondary);
     color: var(--active);
     display: flex;
     flex-direction: column;
@@ -42,7 +50,7 @@ main{
 
 .sidebar ul li a{
     text-decoration: none;
-    color: var(--nav-element);
+    color: var(--tertiary);
     font-size: 1em;
 }
 
@@ -56,7 +64,7 @@ main{
 .container{
     display: flex;
     flex-direction: column;
-    background-color: var(--background);
+    background-color: var(--primary);
 }
 
 /* Home section styling start  */
@@ -86,28 +94,32 @@ main{
     padding-left: 5vw;
     margin-left: 1.5vw;
     font-family: 'Source Code Pro', monospace;
+    color: var(--text);
 }
 
 .intro{
-    font-size: 6vh;
+    font-size: 6.5vh;
 }
 
 .name{
-    font-size: 5vh;
+    font-size: 5.5vh;
     margin-top: 0.9vh;
     margin-bottom: 0.9vh;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 800;
+    color: var(--active);
 }
 
 .quality{
     font-size: 2vh;
     font-family: 'Source Code Pro', monospace;
+    color: var(--light-brown);
+    margin: 1vh 0vw 1vh 0vw;
 }
 
 .more-about{
     margin-top: 1vh;
-    font-size: 2vh;
+    font-size: 1.4vh;
     font-family: 'Fira Sans', sans-serif;
 }
 
@@ -122,7 +134,7 @@ main{
 
 .cv:hover{
     background-color: var(--active);
-    color: var(--gray);
+    color: var(--tertiary);
     cursor: pointer;
 }
 
