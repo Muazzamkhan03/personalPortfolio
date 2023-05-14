@@ -62,7 +62,7 @@ main{
 /* Home section styling start  */
 #main{
     width: 100vw;
-    height: 100vh;
+    height: 85vh;
     display: flex;
     justify-content: center;
 }
@@ -70,10 +70,9 @@ main{
 #info{
     width: 80vw;
     height: 60vh;
-    margin-top: 2vh;
+    margin-top: 12vh;
     display: flex;
     justify-content: space-between;
-    margin-top: 20vh;
 }
 
 .info-container{
@@ -85,7 +84,7 @@ main{
     box-sizing: border-box;
     padding: 2vw;
     padding-left: 5vw;
-    margin-left: 2vw;
+    margin-left: 1.5vw;
     font-family: 'Source Code Pro', monospace;
 }
 
@@ -95,6 +94,8 @@ main{
 
 .name{
     font-size: 5vh;
+    margin-top: 0.9vh;
+    margin-bottom: 0.9vh;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 800;
 }
