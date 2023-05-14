@@ -56,11 +56,11 @@ main{
 .container{
     display: flex;
     flex-direction: column;
+    background-color: var(--background);
 }
 
 /* Home section styling start  */
 #main{
-    background-color: var(--background);
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -71,7 +71,6 @@ main{
     width: 80vw;
     height: 60vh;
     margin-top: 2vh;
-    /* background-color:green; */
     display: flex;
     justify-content: space-between;
     margin-top: 20vh;
@@ -138,7 +137,7 @@ main{
 #about{
     height: 100vh;
     width: 100vw;
-    background-color: var(--background);
+    background-color: transparent;
 }
 /* About section styling end  */
 
@@ -146,7 +145,6 @@ main{
 #skills{
     height: 100vh;
     width: 100vw;
-    background-color: var(--background);
 }
 /* Skills section styling end  */
 
@@ -154,7 +152,6 @@ main{
 #projects{
     height: 100vh;
     width: 100vw;
-    background-color: var(--background);
 }
 /* Projects section styling end  */
 
@@ -162,7 +159,6 @@ main{
 #contact{
     height: 100vh;
     width: 100vw;
-    background-color: var(--background);
 }
 /* Contact section styling end  */
 
