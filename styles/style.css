@@ -15,11 +15,13 @@
     
 }
 
-
-
 *{
     margin: 0;
     padding: 0;
+}
+
+body{
+    overflow-x: hidden; /* Hiding horizontal scroll bar */
 }
 
 main{
@@ -175,3 +177,28 @@ main{
 }
 /* Contact section styling end  */
 
+/* Scroll bar */
+::-webkit-scrollbar{
+    width: 1px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+        transparent,
+        var(--light-blue),
+        transparent
+    );
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(
+        transparent,
+        var(--light-blue),
+        transparent
+    );
+}
+/* Scroll bar end */
