@@ -61,6 +61,10 @@ main{
     font-size: 0.7em;
 }
 
+.active{
+    color: var(--light-brown) !important;
+}
+
 /* Sidebar styling end  */
 
 .container{
@@ -115,7 +119,7 @@ main{
 .quality{
     font-size: 2vh;
     font-family: 'Source Code Pro', monospace;
-    color: var(--light-brown);
+    color: var(--light-blue);
     margin: 1vh 0vw 1vh 0vw;
 }
 
