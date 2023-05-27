@@ -154,9 +154,61 @@ main{
 
 /* About section styling start  */
 #about{
-    height: 100vh;
+    height: 85vh;
     width: 100vw;
-    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#about .content{
+    height: 70%;
+    width: 80%;
+    margin-top: 1vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 12vh;
+    flex-direction: column;
+}
+
+#about .content div{
+    width: 80%;
+    margin-left: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    align-items: flex-start;
+    justify-content: center;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 2vh;
+    line-height: 3.5vh;
+    color: var(--text);
+}
+
+#about .content div h1{
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 4vh;
+    color: var(--light-brown);
+}
+
+#about .content div ul {
+    list-style: none; /* Remove default bullets */
+}
+  
+#about .content div ul li::before {
+    content: "\2022";  
+    color: var(--light-blue); 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
+}
+
+#about .content div ul li div{
+    margin-top: 0px;
+    font-size: 1.5vh;
 }
 /* About section styling end  */
 
