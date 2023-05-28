@@ -159,12 +159,13 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 2vw;
 }
 
 #about .content{
     height: 70%;
-    width: 80%;
+    width: 60%;
     margin-top: 1vh;
     display: flex;
     align-items: flex-start;
@@ -174,11 +175,11 @@ main{
 }
 
 #about .content div{
-    width: 80%;
-    margin-left: 2vw;
+    width: 100%;
+    margin-left: 0.5vw;
     display: flex;
     flex-direction: column;
-    gap: 2vh;
+    gap: 1.5vh;
     align-items: flex-start;
     justify-content: center;
     font-family: 'Source Code Pro', monospace;
@@ -209,6 +210,14 @@ main{
 #about .content div ul li div{
     margin-top: 0px;
     font-size: 1.5vh;
+}
+
+.sideImage{
+    width: 20%;
+    height: 35%;
+    background: url("/img/img.png") no-repeat;
+    background-size: contain;
+    
 }
 /* About section styling end  */
 
