@@ -59,10 +59,12 @@ main{
 .sidebar ul li a:hover{
     color: var(--active);
     font-size: 0.7em;
+    text-shadow: 0 0 5px var(--active);
 }
 
 .active{
     color: var(--light-brown) !important;
+    text-shadow: 0 2px 5px var(--light-brown);
 }
 
 /* Sidebar styling end  */
