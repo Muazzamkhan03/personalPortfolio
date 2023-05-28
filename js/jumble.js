@@ -1,8 +1,9 @@
-const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+// FUNCTIONS
 
-const names = document.querySelector(".name");
+const jumble = () => {
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const names = document.querySelector(".name");
 
-window.onload = (e)=>{
     let iterations = 0; 
 
     const internval = setInterval(()=>{
@@ -20,5 +21,25 @@ window.onload = (e)=>{
 
         iterations += 1/3;
     }, 30);
-};
+}
 
+const isElementInViewport = (element) => {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+  );
+}
+
+const handleScroll = () => {
+    const main = document.querySelector("#main");
+
+    if (isElementInViewport(main)) {
+        jumble();
+    }
+}
+
+// EVENT LISTENERS
+
+window.onload = jumble();
+window.addEventListener('scroll', handleScroll);
