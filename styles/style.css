@@ -109,16 +109,6 @@ main{
     font-size: 6.5vh;
 }
 
-@keyframes background-pan {
-    from {
-        background-position: 0% center;
-    }
-    
-    to {
-        background-position: -200% center;
-    }
-}
-
 .name{
     font-size: 5.5vh;
     margin-top: 0.9vh;
@@ -126,19 +116,7 @@ main{
     font-family: 'Fira Sans', sans-serif;
     letter-spacing: 0.3vh;
     font-weight: 800;
-    animation: background-pan 3s linear infinite;
-    background: linear-gradient(
-        to right,
-        var(--active),
-        var(--text),
-        var(--light-blue),
-        var(--text),
-        var(--active)
-    );
-    background-size: 200%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    white-space: nowrap;
+    color: var(--active);
 }
 
 .quality{
