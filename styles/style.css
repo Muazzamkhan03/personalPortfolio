@@ -339,9 +339,6 @@ main{
     height: 95%;
     width: 80%;
     position: relative;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
 }
 
 .articles-section > article {
@@ -351,10 +348,33 @@ main{
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 2fr 1fr;
     position: absolute;
+    transition: transform 400ms ease;
 }
 
 .articles-section > article[data-status="inactive"]{
-    transform: translateX(-200%);
+    transform: scale(0);
+}
+
+.articles-section > article[data-status="after"]{
+    transform: translateX(50%) scale(0);
+}
+
+.articles-section > article[data-status="before"]{
+    transform: translateX(-50%) scale(0);
+}
+
+.articles-section > article[data-status="becoming-active-from-before"]{
+    transform: translateX(-50%) scale(0);
+    transition: none;
+}
+
+.articles-section > article[data-status="becoming-active-from-after"]{
+    transform: translateX(50%) scale(0);
+    transition: none;
+}
+
+.articles-section > article[data-status="active"]{
+    transition-delay: 300ms;
 }
 
 .article-desc, .article-nav{
@@ -364,6 +384,26 @@ main{
 .article-title, .article-nav{
     border-top: 1px solid var(--border-colour);
 } 
+
+.article-nav{
+    display: flex;
+}
+
+.article-btn{
+    height: 100%;
+    width: 50%;
+    background-color: transparent;
+    box-sizing: border-box;
+    border: none;
+    font-size: 2.5em;
+    color: var(--text);
+    cursor: pointer;
+}
+
+.article-right{
+    border-left: 1px solid var(--border-colour);
+}
+
 /* Projects section styling end  */
 
 /* Contact section styling start  */
