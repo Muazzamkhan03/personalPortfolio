@@ -8,6 +8,7 @@
     <title>Muazzam Khan - Software Engineering student, Web developer, Programmer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/scroll.css">
 </head>
 
 <body>
@@ -29,7 +30,7 @@
         <!-- Start container  -->
         <div class="container">
             <!-- Start main -->
-            <div id="main">
+            <section id="main">
                 <!-- Start info  -->
                 <div id="info">
                     <!-- Start info-container  -->
@@ -49,13 +50,13 @@
                     <!-- End pic  -->
                 </div>
                 <!-- End info  -->
-            </div>
+            </section>
             <!-- End main  -->
 
             <!-- Start About  -->
-            <div id="about">
+            <section id="about">
                 <!-- Start Content -->
-                <div class="content">
+                <div class="content hidden">
                     <!-- Start About me  -->
                     <div>
                         <h1>ABOUT ME</h1>
@@ -82,14 +83,14 @@
                 </div>
                 <!-- End Content  -->
                 <!-- Start Image  -->
-                <div class="sideImage"></div>
-            </div>
+                <div class="sideImage hidden"></div>
+            </section>
             <!-- End About  -->
 
             <!-- Start Skills  -->
-            <div id="skills">
-                <h1>MY SKILLS</h1>
-                <div class="grid">
+            <section id="skills">
+                <h1 class="hidden">MY SKILLS</h1>
+                <div class="grid hidden">
                     <div class="box" id="c"></div>
                     <div class="box" id="cpp"></div>
                     <div class="box" id="python"></div>
@@ -103,12 +104,13 @@
                     <div class="box" id="bootstrap"></div>
                     <div class="box" id="figma"></div>
                 </div>
-            </div>
+            </section>
             <!-- End Skills  -->
 
             <!-- Start Projects  -->
-            <div id="projects">
-                <div class="articles-section"> <!-- Remember while adding a new article, to change the index in the data-index attribute, and change the id of the article -->
+            <section id="projects">
+                <div class="articles-section hidden-project"> 
+                    <!-- Remember while adding a new article, to change the index in the data-index attribute, and change the id of the article -->
                     <!-- Start Article  -->
                     <article data-index="0" data-status="active" id="article-0">
                         <div class="article-img article-section">
@@ -157,18 +159,15 @@
                             <button class="article-right article-btn" onclick="rightClick()"><i class="fa-solid fa-arrow-right"></i></button>
                         </div>
                     </article>
-                    <!-- End Article -->
-                    
-                    
+                    <!-- End Article -->  
                 </div>
-                
-            </div>
+            </section>
             <!-- End Projects  -->
 
             <!-- Start Contact  -->
-            <div id="contact">
-
-            </div>
+            <section id="contact" class="hidden">
+                
+            </section>
             <!-- End Contact  -->
         </div>
         <!-- End Container  -->
@@ -180,6 +179,7 @@
     <script src="/js/hover.js"></script>
     <script src="/js/carrousell.js"></script>
     <script src="/js/videohandler.js"></script>
+    <script src="/js/scroll.js"></script>
 </body>
 
 </html>
