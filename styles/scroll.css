@@ -38,13 +38,13 @@
     transform: translateX(0);
 }
 
-.hidden-project{
+.hidden-special{
     opacity: 0;
     filter: blur(5px);
-    transition: all 1s;
+    transition: all 2s;
 }
 
-.show-project{
+.show-special{
     opacity: 1;
     filter: blur(0);
 }
