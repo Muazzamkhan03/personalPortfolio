@@ -229,7 +229,7 @@ main{
 /* Skills section styling start  */
 
 #skills{
-    height: 85vh;
+    height: 95vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -243,7 +243,7 @@ main{
     letter-spacing: 0.3vh;
     font-weight:800;
     line-height: 4vh;
-    margin-top: 5vh;
+    margin-top: 2vh;
     color: var(--light-brown);
 }
 
@@ -254,7 +254,6 @@ main{
     display: grid;
     grid-template-columns: repeat(6,auto);
     grid-template-rows: repeat(2,auto);
-    
 }
 
 .grid > .box{
@@ -335,10 +334,11 @@ main{
 }
 
 #projects > .articles-section{
-    background-color: red;
+    /* background-color: red; */
     height: 95%;
     width: 80%;
     position: relative;
+    border: 1px solid var(--border-colour);
 }
 
 .articles-section > article {
@@ -385,6 +385,12 @@ main{
     border-top: 1px solid var(--border-colour);
 } 
 
+.article-img{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
 .article-nav{
     display: flex;
 }
@@ -402,6 +408,10 @@ main{
 
 .article-right{
     border-left: 1px solid var(--border-colour);
+}
+
+#project-0-video{
+    max-width: 100%;
 }
 
 /* Projects section styling end  */
