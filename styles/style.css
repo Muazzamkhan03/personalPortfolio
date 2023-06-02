@@ -440,6 +440,11 @@ main{
     color: var(--text);
 }
 
+.article-desc a:hover{
+    color: var(--light-blue);
+    text-decoration: none;
+}
+
 /* Projects section styling end  */
 
 /* Contact section styling start  */
