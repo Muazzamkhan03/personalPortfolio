@@ -436,6 +436,9 @@ main{
     padding-right: 1vw;
 }
 
+.article-desc ul{
+    padding-left: 2vh;
+}
 .article-desc a{
     color: var(--text);
 }
@@ -443,6 +446,36 @@ main{
 .article-desc a:hover{
     color: var(--light-blue);
     text-decoration: none;
+}
+
+#article-2 .article-img{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 50% 50%;
+    gap: 2vh;
+}
+
+.img1, .img2, .img3, .img4{
+    height: 100%;
+}
+#article-2 .article-img .img1{
+    background: transparent url(/img/otherProjects/img1.png) no-repeat center;
+    background-size: contain;
+}
+
+#article-2 .article-img .img2{
+    background: transparent url(/img/otherProjects/img2.png) no-repeat center;
+    background-size: contain;
+}
+
+#article-2 .article-img .img3{
+    background: transparent url(/img/otherProjects/img3.png) no-repeat center;
+    background-size: contain;
+}
+
+#article-2 .article-img .img4{
+    background: transparent url(/img/otherProjects/img4.png) no-repeat center;
+    background-size: contain;
 }
 
 /* Projects section styling end  */
