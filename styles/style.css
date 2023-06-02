@@ -35,7 +35,7 @@ main{
     color: var(--active);
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content:space-around;
     gap: 2vh;
     font-family: 'Fira Sans', sans-serif;
     width: 5vw;
@@ -49,6 +49,7 @@ main{
     flex-direction: column;
     align-items: center;
     gap: 8vh;
+    margin-top: 20vh;
 }
 
 .sidebar ul li a{
@@ -60,6 +61,24 @@ main{
 .sidebar ul li a:hover{
     color: var(--active);
     font-size: 0.7em;
+    text-shadow: 0 0 5px var(--active);
+}
+
+.socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    font-size: 1em;
+    justify-self: flex-end;
+}
+
+.socials a{
+    color: var(--tertiary);
+}
+
+.socials a:hover{
+    color: var(--active);
     text-shadow: 0 0 5px var(--active);
 }
 
