@@ -220,7 +220,7 @@ main{
 .sideImage{
     width: 20%;
     height: 35%;
-    background: url("./img/img.png") no-repeat;
+    background: url("/img/img.png") no-repeat;
     background-size: contain;
     
 }
