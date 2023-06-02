@@ -389,6 +389,8 @@ main{
     display: flex;
     align-items: center;
     justify-content:center;
+    flex-direction: column;
+    gap: 1vh;
 }
 
 .article-nav{
@@ -410,8 +412,32 @@ main{
     border-left: 1px solid var(--border-colour);
 }
 
-#project-0-video{
-    max-width: 100%;
+.project-video{
+    max-width: 90%;
+}
+
+.article-title{
+    color: var(--light-brown);
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.article-desc{
+    color: var(--text);
+    font-family: 'Source Code Pro', monospace;
+    display: flex;
+    align-items: flex-end;
+    box-sizing: border-box;
+    padding-bottom: 8vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.article-desc a{
+    color: var(--text);
 }
 
 /* Projects section styling end  */
