@@ -515,7 +515,6 @@ main{
 }
 
 #contact .content{
-    background-color: red;
     height: 80vh;
     width: 70vw;
     display: flex;
@@ -528,7 +527,14 @@ main{
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    gap: 3vh;
+    gap: 4vh;
+    height: 100%;
+}
+
+#contact h1{
+    color: var(--light-brown);
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 2em;
 }
 
 #contact-form .inputs{
@@ -539,22 +545,30 @@ main{
     gap: 2vh;
     align-items: center;
 }
+
 #contact-form .inputs input{
     height: 3.5vh;
     border-radius: 1em;
     border: none;
     background-color: transparent;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 16px;
+    border-bottom: 3px solid var(--border-colour);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 1);
+    color: var(--text);
+    font-size: 0.8em;
     padding: 10px;
     transition: border-color 0.3s ease-in-out;
+    font-family: 'Source Code Pro', monospace;
 }
 
 #contact-form .inputs input:focus{
-    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 3px solid var(--tertiary);
     outline: none;
+}
+
+#contact-form .inputs label{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1em;
+    color: var(--tertiary);
 }
 
 #contact-form .inputs textarea{
@@ -562,17 +576,40 @@ main{
     border: none;
     border: none;
     background-color: transparent;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 16px;
+    border-bottom: 3px solid var(--border-colour);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 1);
+    color: var(--text);
+    font-size: 0.8em;
     padding: 10px;
     transition: border-color 0.3s ease-in-out;
+    resize: none;
+    font-family: 'Source Code Pro', monospace;
 }
 
 #contact-form .inputs textarea:focus{
-    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 3px solid var(--tertiary);
     outline: none;
 }
+
+#contact-form button{
+    margin-top: 2vh;
+    padding: 1vh;
+    width: 10vw;
+    border: 0.2em solid var(--active);
+    color: var(--active);
+    background-color: transparent;
+    align-self: center;
+}
+
+#contact-form button:hover{
+    background-color: var(--active);
+    color: var(--tertiary);
+    cursor: pointer;
+}
+
+#contact-info{
+    height: 100%;
+}
+
 /* Contact section styling end  */
 
