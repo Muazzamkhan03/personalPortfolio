@@ -427,6 +427,11 @@ main{
     cursor: pointer;
 }
 
+.article-btn:hover{
+    font-size: 3em;
+    text-shadow: 0 2px 4px var(--text);
+
+}
 .article-right{
     border-left: 1px solid var(--border-colour);
 }
