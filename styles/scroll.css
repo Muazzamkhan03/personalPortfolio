@@ -48,3 +48,7 @@
     opacity: 1;
     filter: blur(0);
 }
+
+.grid{
+    transition-delay: 0.2s;
+}
