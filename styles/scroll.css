@@ -1,6 +1,6 @@
 /* Scroll bar styling  */
 ::-webkit-scrollbar{
-    width: 1px;
+    width: 5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -25,7 +25,7 @@
 
 /* Scroll animation  */
 
-.hidden{
+/* .hidden{
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
@@ -51,4 +51,4 @@
 
 .grid{
     transition-delay: 0.2s;
-}
+} */

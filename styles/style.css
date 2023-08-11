@@ -60,7 +60,6 @@ main{
 
 .sidebar ul li a:hover{
     color: var(--active);
-    font-size: 0.7em;
     text-shadow: 0 0 5px var(--active);
 }
 
