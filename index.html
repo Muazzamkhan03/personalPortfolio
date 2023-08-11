@@ -1,207 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muazzam Khan - Software Engineering student, Web developer, Programmer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/scroll.css">
+    <title>Muazzam Khan - Software Engineer</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: #121930;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1{
+            color: #cccccc;
+            font-size: 10vh;
+        }
+        
+    </style>
 </head>
-
 <body>
-    <main>
-
-        <!-- Start sidebar  -->
-        <div class="sidebar">
-            <ul>
-                <li><a href='#main' class="home-btn active"><i class="fa-solid fa-house"></i></a></li>
-                <li><a href='#about' class="about-btn"><i class="fa-regular fa-user"></i></a></li>
-                <li><a href='#skills' class="skills-btn"><i class="fa-solid fa-screwdriver-wrench"></i></a></li>
-                <li><a href='#projects' class="projects-btn"><i class="fa-regular fa-eye"></i></a></li>
-                <li><a href='#contact' class="contact-btn"><i class="fa-regular fa-envelope"></i></a></li>
-            </ul>
-            <div class="socials">
-                <a href="https://www.linkedin.com/in/muazzam-khan-275351241/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/Muazzamkhan03" target="_blank"><i class="fa-brands fa-github"></i></a>
-            </div>
-        </div>
-        <!-- End sidebar  -->
-
-        <!-- Start container  -->
-        <div class="container">
-            <!-- Start main -->
-            <section id="main">
-                <!-- Start info  -->
-                <div id="info">
-                    <!-- Start info-container  -->
-                    <div class="info-container">
-                        <div class="intro">Hi, I am</div>
-                        <div class="name" data-value="MUAZZAM KHAN">MUAZZAM KHAN</div>
-                        <div class="quality">Software Engineering student</div>
-                        <div class="more-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, officia!
-                        </div>
-                        <button class="cv">Download CV <i class="fa-solid fa-download"></i></button>
-                    </div>
-                    <!-- End info-container  -->
-                    <!-- Start pic  -->
-                    <div class="pic">
-                        <img src="./img/self.png" alt="Muazzam's Picture'">
-                    </div>
-                    <!-- End pic  -->
-                </div>
-                <!-- End info  -->
-            </section>
-            <!-- End main  -->
-
-            <!-- Start About  -->
-            <section id="about">
-                <!-- Start Content -->
-                <div class="content hidden">
-                    <!-- Start About me  -->
-                    <div>
-                        <h1>ABOUT ME</h1>
-                        <div class="text">
-                            I am a software engineering student with experience in Python, C++, Web development and version
-                            control. Passionate about staying current with industry developments, I am committed to ongoing
-                            learning and growth. I enjoy collaborating with others to solve problems and achieve shared
-                            goals, and I am seeking opportunities to gain hands-on experience in software development.
-                        </div>
-                    </div>
-                    <!-- End About Me  -->
-                    <!-- Start Achievements  -->
-                    <div>
-                        <h1>ACHIEVEMENTS</h1>
-                        <div class="text">
-                            <ul>
-                                <li>Got selected in the top 52 participants from all over Pakistan for NPTC-25
-                                    <div>Jan 2021</div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- End Achievements  -->
-                </div>
-                <!-- End Content  -->
-                <!-- Start Image  -->
-                <div class="sideImage hidden"></div>
-            </section>
-            <!-- End About  -->
-
-            <!-- Start Skills  -->
-            <section id="skills">
-                <h1 class="hidden">MY SKILLS</h1>
-                <div class="grid hidden-special">
-                    <div class="box" id="c"></div>
-                    <div class="box" id="cpp"></div>
-                    <div class="box" id="python"></div>
-                    <div class="box" id="sql"></div>
-                    <div class="box" id="git"></div>
-                    <div class="box" id="github"></div>
-                    <div class="box" id="php"></div>
-                    <div class="box" id="html"></div>
-                    <div class="box" id="css"></div>
-                    <div class="box" id="js"></div>
-                    <div class="box" id="bootstrap"></div>
-                    <div class="box" id="figma"></div>
-                </div>
-            </section>
-            <!-- End Skills  -->
-
-            <!-- Start Projects  -->
-            <section id="projects">
-                <div class="articles-section hidden-special"> 
-                    <!-- Remember while adding a new article, to change the index in the data-index attribute, and change the id of the article -->
-                    <!-- Start Article  -->
-                    <article data-index="0" data-status="active" id="article-0">
-                        <div class="article-img article-section">
-                            <video autoplay muted loop class="project-video">
-                                <source src="./video/project-0.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="article-desc article-section"><p>"Maze Runner" is a CLI based Maze game. 
-                            It was created as a Final Project for one of my courses. 
-                            This game is programmed in C++ and uses Object Oriented approach for the structuring of the code.
-                            Source Code available <a href="https://github.com/Muazzamkhan03/MazeGame" target="_blank">here</a></p></div>
-                        <div class="article-title article-section">Maze Runner</div>
-                        <div class="article-nav article-section">
-                            <button class="article-left article-btn" onclick="leftClick()"><i class="fa-solid fa-arrow-left"></i></button>
-                            <button class="article-right article-btn" onclick="rightClick()"><i class="fa-solid fa-arrow-right"></i></button>
-                        </div>
-                    </article>
-                    <!-- End Article -->
-                    <!-- Start Article  -->
-                    <article data-index="1" data-status="inactive" id="article-1">
-                        <div class="article-img article-section">
-                            <video autoplay muted loop class="project-video">
-                                <source src="./video/project-1.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="article-desc article-section"><p>A Tic Tac Toe game that can be played on any browser. Source code available <a href="https://github.com/Muazzamkhan03/webTicTacToe" target="_blank">here</a>. Give it a try <a href="https://web-x-o.netlify.app/" target="_blank">here</a></p></div>
-                        <div class="article-title article-section">Tic Tac Toe</div>
-                        <div class="article-nav article-section">
-                            <button class="article-left article-btn" onclick="leftClick()"><i class="fa-solid fa-arrow-left"></i></button>
-                            <button class="article-right article-btn" onclick="rightClick()"><i class="fa-solid fa-arrow-right"></i></button>
-                        </div>
-                    </article>
-                    <!-- End Article -->
-                    <!-- Start Article  -->
-                    <article data-index="2" data-status="inactive" id="article-2">
-                        <div class="article-img article-section">
-                            <div class="img1"></div>
-                            <div class="img2"></div>
-                            <div class="img3"></div>
-                            <div class="img4"></div>
-                        </div>
-                        <div class="article-desc article-section"><p><ul><li>To-do list app</li><li>World clock</li><li>Stop watch</li><li>Calculator</li></ul></p></div>
-                        <div class="article-title article-section">Other projects</div>
-                        <div class="article-nav article-section">
-                            <button class="article-left article-btn" onclick="leftClick()"><i class="fa-solid fa-arrow-left"></i></button>
-                            <button class="article-right article-btn" onclick="rightClick()"><i class="fa-solid fa-arrow-right"></i></button>
-                        </div>
-                    </article>
-                    <!-- End Article -->  
-                </div>
-            </section>
-            <!-- End Projects  -->
-
-            <!-- Start Contact  -->
-            <section id="contact">
-                <div class="content">
-                    <form action="#" id="contact-form">
-                        <h1>Get in touch</h1>
-                        <div class="inputs">
-                            <label for="name">Name</label>
-                            <input type="text" name="name" id="name">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email">
-                            <label for="message">Message</label>
-                            <textarea name="message" id="message" cols="35" rows="8"></textarea>
-                        </div>
-                        <button>Submit <i class="fa-regular fa-paper-plane"></i></button>
-                    </form>
-                    <div id="contact-info">
-                        <h1>Socials</h1>
-                        <a href="mailto:muazzamkhan1802@icloud.com" target="_blank"> <i class="fa-regular fa-envelope"></i>  muazzamkhan1802@icloud.com</a> 
-                        <a href="https://www.instagram.com/_muazzam_real_/" target="_blank"> <i class="fa-brands fa-instagram"></i>  _muazzam_real_</a>
-                        <a href="https://www.linkedin.com/in/muazzam-khan-275351241/" target="_blank"><i class="fa-brands fa-linkedin"></i>  Muazzam Khan</a>
-                        <a href="https://github.com/Muazzamkhan03" target="_blank"> <i class="fa-brands fa-github"></i>  https://github.com/Muazzamkhan03</a>
-                        <p><i class="fa-brands fa-discord"></i> Username: Moon-Knight01#1936</p>
-                    </div>
-                </div>
-            </section>
-            <!-- End Contact  -->
-        </div>
-        <!-- End Container  -->
-    </main>
-
-    <script src="./js/changetext.js"></script>
-    <script src="./js/jumble.js"></script>
-    <script src="./js/carrousell.js"></script>
-    <script src="./js/scroll.js"></script>
-    <script src="./js/download.js"></script>
+<h1>Under Construction</h1>
 </body>
-
 </html>
