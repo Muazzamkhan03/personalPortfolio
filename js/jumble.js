@@ -23,23 +23,4 @@ const jumble = () => {
     }, 30);
 }
 
-const isElementInViewport = (element) => {
-    const rect = element.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-    );
-}
-
-const handleScroll = () => {
-    const main = document.querySelector("#main");
-
-    if (isElementInViewport(main)) {
-        jumble();
-    }
-}
-
-// EVENT LISTENERS
-
 window.onload = jumble();
-window.addEventListener('scroll', handleScroll);
