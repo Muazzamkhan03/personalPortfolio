@@ -1,0 +1,652 @@
+@import "./utility.css";
+
+* {
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box; /* Adding box-sizing to include padding and border in element sizing */
+    color: white;
+}
+
+body{
+    background-color: var(--background-color) !important;
+}
+
+nav{
+    /* background-color: var(--nav) !important; */
+    background: rgba(52, 152, 219, .2);
+    border-bottom: 2px solid rgba(52, 152, 219, .3);
+    backdrop-filter: blur(10px);
+}
+
+nav::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(52, 152, 219, .5), transparent);
+    transition: .4s;
+}
+
+nav:hover::before{
+    left: 100%;
+}
+
+nav a{
+    color: var(--text) !important;
+    transition: color 0.4s !important;
+}
+
+nav a:hover{
+    color: var(--button) !important;
+}
+
+/* Home css */
+div.intro {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--secondary-background);
+    width: 100%;
+    justify-content: center;
+    align-items: center; /* Align both horizontally and vertically */
+    height:90vh; /* Adding a height to the Home to take the full viewport height */
+}
+
+.left {
+    flex: 1;
+    /* background-color: orange; */
+    height: 50vh;
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+    margin-left:50px;
+    align-items: center; /* Center content horizontally and vertically */
+}
+
+.btns{
+    /* background-color: var(--button); */
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#cv-btn{
+    background-color: var(--button);
+}
+
+.social-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50%;
+}
+
+.social-btn{
+    border-radius: 50% !important;
+    color: white;
+    font-size: 2em;
+    border: none;
+}
+
+
+.right {
+    height: 50vh;
+    width: 50%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center content horizontally and vertically */
+    text-align: center;
+}
+
+.profile-pic {
+    width: 500px;
+    height: 500px;
+}
+
+@media screen and (max-width: 768px) {
+    div.intro {
+        flex-direction: column;
+        height:120vh;
+    }
+
+    .right {
+        order: -1;
+    }
+
+    .left {
+        margin-left: 0; /* Resetting margin for smaller screens */
+        margin-top: 20px; 
+        width:100%;
+        /* Adding margin on top for separation */
+    }
+}
+/* Home css ends here  */
+
+
+/* Skills css starts here */
+.skills-container {
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.custom-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100vh;
+}
+
+.custom-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--secondary-background);
+    padding: 20px;
+    border-radius: 5px;
+    margin-right: 20px;
+    width:70%;
+}
+
+.grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 7%;
+    flex: 1;
+}
+
+.logo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-box img {
+    width: 10vh;
+    /* height: 10vh; */
+    /* border-radius: 50%; */
+}
+
+.custom-right {
+    display: flex;
+    flex-direction: column;
+    background-color:var(--secondary-background);
+    padding: 1%;
+    border-radius: 5px;
+    flex: 1;
+    height:20%;
+}
+
+.sub-heading {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    align-items: center;
+    width:100%;
+}
+
+.pill{
+    background-color: rgb(96,124,138);
+    color: white;
+    height:3vh;
+    padding: 0vh 2vh;
+    font-size:14px;
+    font-family: 'Montserrat', sans-serif !important;
+    border-radius: 2vh;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 5vh;
+}
+
+div.rit {
+    width: 30%; /* Adjust width to full width for mobile */
+    height: auto; /* Height will be determined by its content */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2%;
+}
+
+@media (max-width: 768px) {
+    .custom-container {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .custom-left {
+        margin-right: 0;
+        width:100%;
+
+    }
+    div.rit{
+        display: flex;
+        font-display:column;
+        width:100%;
+    }
+
+    div.head {
+        flex-direction:row; /* Stack headings in a column */
+        align-items: center; /* Center headings horizontally */
+    }
+}
+
+@media (max-width: 425px)
+{
+    .text-heading{
+        height:10px;
+        font-size:10px;
+        padding: 0px;
+    }
+}
+
+/* Skills css ends here  */
+
+
+/* Projects css starts here  */
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 120vh;
+}
+
+#tabs{
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    margin-bottom: 20px;
+    color: var(--small-links);
+    border-bottom: 2px solid rgba(52, 152, 219, .3) !important;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    gap: 2%;
+    height: 80%;
+    -webkit-overflow-scrolling: touch; 
+    width: 95%; 
+    padding: 0% 1%;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--secondary-background) !important;
+    flex: 0 0 auto; /* Prevent cards from shrinking */
+    width:60%;
+    gap: 1.5%;
+    height: 90% !important;
+    border-radius: 1em !important;
+    overflow: hidden;
+    padding: 1% 0% 0% 0%;
+}
+
+#pong-img{
+    height: 85%;
+    width: 80%;
+    background: url('../img/projects/cpp/pong.png') no-repeat top !important;
+    background-size: contain !important;
+
+}
+
+.project-content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 80%;
+    height: 80%;
+    flex-direction: column;
+    gap: 1%;
+}
+
+.project-content > .secondary-text{
+    height: 70%;
+}
+
+.card img {
+    width: 80%;
+    border-radius: 1em;
+    /* margin-bottom: 1vh; */
+    object-fit: cover;
+}
+
+[data-tab-content] {
+    display: none;
+}
+
+[data-tab-target] {
+    transition: box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.active-tab[data-tab-content] {
+    display: flex;
+}
+
+.active-tab[data-tab-target] {
+    box-shadow: 0 4px 4px -2px rgb(52, 152, 219);
+}
+
+@media (max-width: 768px) {
+    .cards {
+        flex-wrap: nowrap; /* Show one card at a time */
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+        width: 100%; /* Adjust the width to fit the screen */
+        margin: 20px 0; /* Add some margin for better spacing */
+        padding: 10px 0; /* Add padding to center the cards */
+        align-items: center; /* Center cards vertically */
+    }
+
+    .card {
+        flex: 0 0 auto; /* Prevent cards from shrinking */
+        width: 20%; /* Adjust card width */
+        margin: 0 10px; /* Add some margin between cards */
+    }
+
+    [data-tab-content] {
+        display: none;
+    }
+    
+    [data-tab-target] {
+        transition: box-shadow 0.3s;
+        cursor: pointer;
+    }
+    
+    .active-tab[data-tab-content] {
+        display: flex;
+    }
+}
+@media (max-width: 425px) {
+    .cards-wrapper {
+        width: 100%;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+        display: flex;
+        justify-content: flex-start; /* Start from the left side */
+        align-items: center;
+        padding: 20px 0;
+        margin: 20px 0;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: nowrap;
+        width:100%;
+        /* width: max-content; */
+         /* Allow the container to adjust to its content */
+    }
+
+    .card {
+        flex: 0 0 auto;
+        width: 80%;
+        margin: 0 10px;
+    }
+
+    [data-tab-content] {
+        display: none;
+    }
+    
+    [data-tab-target] {
+        transition: box-shadow 0.3s;
+        cursor: pointer;
+    }
+    
+    .active-tab[data-tab-content] {
+        display: flex;
+    }
+}
+/* Projects css ends here  */
+
+
+/* About css starts here  */
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fourbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+}
+
+.box {
+    width: 45%;
+    height: 40%;
+    background-color: var(--secondary-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #education{
+    background-color: pink;
+} */
+
+.uni div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.college div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#achievements{
+    /* background-color: blue; */
+    padding-top: 1vh;
+    justify-content: flex-start;
+    gap: 3vh;
+}
+
+.achievement{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#interests{
+    /* background-color: red; */
+    height: 30%;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2vh;
+    padding-bottom: 17vh;
+}
+
+#languages{
+    /* background-color: black; */
+    height: 30%;
+}
+
+@media (max-width: 768px) {
+    .box {
+        width: 100%;
+    }
+}
+/* About css ends here  */
+
+
+/* contact section starts here */
+.contact {
+    /* background-color: grey; */
+    display: flex;
+    height: 90vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.left-div {
+    background-color: var(--secondary-background);
+    width: 40%; /* Half the width of the contact div */
+    height: 68%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    margin:20px;
+    flex-shrink: 0; /* Prevent it from shrinking */
+}
+
+.left-div div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 50%;
+}
+
+.left-div a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.right-div {
+    background-color: var(--secondary-background);
+    width: 40%; /* Half the width of the contact div */
+    height: 68%;
+    padding: 20px;
+    display: flex;
+    margin:20px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.field {
+    /* background-color: grey; */
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.field input{
+    width: 100%;
+    color: var(--text);
+    background: transparent;
+    border-bottom: 2px solid rgba(52, 152, 219, .3) !important;
+    backdrop-filter: blur(10px) !important;
+    border: none;
+    transition: box-shadow 0.3s;
+}
+
+.field input:focus{
+    outline: none;
+    box-shadow: 0 4px 4px -2px rgb(52, 152, 219);
+}
+
+.description {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.description textarea{
+    width: 100%;
+    background: transparent;
+    border-bottom: 2px solid rgba(52, 152, 219, .3) !important;
+    backdrop-filter: blur(10px) !important;
+    border: none;
+    transition: box-shadow 0.3s;
+    color: var(--text);
+    resize: none;
+}
+
+.description textarea:focus{
+    outline: none;
+    box-shadow: 0 4px 4px -2px rgb(52, 152, 219);
+}
+
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column; /* Stack the divs vertically */
+    }
+
+    .left-div,
+    .right-div {
+        width: 100%; /* Full width on mobile */
+    }
+}
+@media (max-width: 425px) {
+    .contact {
+        flex-direction: column; /* Stack the divs vertically */
+    }
+
+    .left-div{width: 80%; /* Full width on mobile */
+
+    }
+    .right-div {
+        width: 80%; /* Full width on mobile */
+    }
+    textarea{
+        width:90%;
+    }
+}
+
+/* contact section css ends here  */
+
+
+/* footer css starts here  */
+
+  .footer {
+    background-color: var(--secondary-background);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7vh;
+    width: 100%;
+}
+
+.footer p{
+    margin: 0;
+}
+
+/* Footer css ends here  */

@@ -1,13 +1,467 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muazzam Khan - Software Engineer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Muazzam Khan</title>
     <link rel="stylesheet" href="./styles/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="./scripts/script.js" defer></script>
 </head>
 
 <body>
 
+    <!-- navbar starts -->
+    <nav class="navbar navbar-expand-md sticky-top nav-color">
+        <div class="container-fluid">
+            <div>Muazzam Khan</div>
+            <button class="navbar-toggler nav-color" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars nav-color"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link h4" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link h4" aria-current="page" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link h4" aria-current="page" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link h4" aria-current="page" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link h4" aria-current="page" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar ends  -->
+
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+        data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+        <!-- main intro div starts here -->
+        <div class="intro" id="home">
+            <div class="left">
+                <h1 class="h1">Muazzam Khan</h1>
+                <h3 class="h3">Aspiring Software Engineer</h3>
+                <p class="text">
+                    A passionate Software Engineering student with experience in C++, Python, and Web
+                    development. Dedicated to staying current with industry developments and committed to
+                    ongoing learning and growth.
+                </p>
+                <div class="btns">
+                    <a href="https://drive.google.com/file/d/1E4ubu7JbF-UaK_cCILagpu-hXfoLE29t/view?usp=sharing" target="_blank">
+                        <button class="button" id="cv-btn">View Resume</button>
+                    </a>
+                    <div class="social-btns">
+                        <a class="social-btn" href="https://www.linkedin.com/in/muazzam-khan-275351241/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a class="social-btn" href="https://github.com/Muazzamkhan03"><i
+                                class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img class="profile-pic" src="./img/self/self.png" alt="Profile Picture">
+            </div>
+        </div>
+        <!-- intro div ends here  -->
+
+        <!-- third section div starts here  -->
+        <div class="skills-container" id="skills">
+            <h1 class="h1">Skills</h1>
+
+            <div class="custom-container">
+                <div class="custom-left box-shadow">
+                    <h2 class="h2">Tech Stack</h2>
+                    <div class="grid">
+                        <div class="logo-box"><img src="./img/skills/c.png" alt="Logo 1">
+                        </div>
+                        <div class="logo-box"><img src="./img/skills/cpp.png" alt="Logo 1">
+                        </div>
+                        <div class="logo-box"><img src="./img/skills/css.png" alt="Logo 1">
+                        </div>
+                        <div class="logo-box"><img src="./img/skills/figma.png" alt="Logo 1">
+                        </div>
+                        <div class="logo-box"><img src="./img/skills/git.png" alt="Logo 1">
+                        </div>
+                        <div class="logo-box"><img src="./img/skills/html.png" alt="Logo 1">
+                        </div>
+                        <div class="logo-box"><img src="./img/skills/js.png" alt="Logo 1">
+                        </div>
+                        <div class="logo-box"><img src="./img/skills/mongo.png" alt="Logo 1">
+                        </div>
+                        <div class="logo-box"><img src="./img/skills/mysql.png" alt="Logo 1">
+                        </div>
+                        <div class="logo-box"><img src="./img/skills/node.png" alt="Logo 1">
+                        </div>
+                        <div class="logo-box"><img src="./img/skills/php.png" alt="Logo 1">
+                        </div>
+                        <div class="logo-box"><img src="./img/skills/python.png" alt="Logo 1">
+                        </div>
+                        <div class="logo-box"><img src="./img/skills/react.png" alt="Logo 1">
+                        </div>
+                        <div class="logo-box"><img src="./img/skills/bootstrap.svg" alt="Logo 1">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rit">
+                    <div class="custom-right box-shadow">
+                        <h2 class="h2">Hard Skills</h2>
+                        <div class="pills">
+                            <p class="pill">Object-Oriented Programming</p>
+                            <p class="pill">MERN Development</p>
+                            <p class="pill">Database Design</p>
+                            <p class="pill">Version Control</p>
+                            <p class="pill">Web Design</p>
+                            <p class="pill">Web Development</p>
+                            <p class="pill">Web Scrapping</p>
+                            <p class="pill">Automation</p>
+                        </div>
+                    </div>
+
+                    <div class="custom-right box-shadow">
+                        <h2 class="h2">Soft Skills</h2>
+                        <div class="pills">
+                            <p class="pill">Communication</p>
+                            <p class="pill">Mentorship</p>
+                            <p class="pill">Management</p>
+                            <p class="pill">Adaptability</p>
+                            <p class="pill">Leadership</p>
+                            <p class="pill">Decision-making</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- cards div starts here  -->
+        <div class="projects" id="projects">
+            <h1 class="h1">Projects</h1>
+
+                <div id="tabs">
+                    <div class="active-tab" data-tab-target="#web">Web Development</div>
+                    <div class="" data-tab-target="#cpp">C++</div>
+                    <div class="" data-tab-target="#python">Python</div>
+                </div>
+
+            <!-- Card wrapper for web development projects start here  -->
+            <div class="cards cards-wrapper active-tab" id="web" data-tab-content>
+
+                <!-- Card starts  -->
+                <div class="card box-shadow">
+                    <img src="./img/projects/web/riderent.png"
+                        alt="Project 2">
+                    <div class="project-content">
+                        <div class="h2 project-title">RideRent</div>
+                        <div class="secondary-text">
+                            <ul> 
+                                <li>Developed an online car renting platform where owners can list their cars for rent, and renters can easily rent cars.</li>
+                                <li>Was developed in collaboration with a dedicated team.</li>
+                                <li>Utilized <em>HTML5</em>,  <em>CSS3</em>,  <em>JavaScript</em>, and  <em>Bootstrap</em> for the frontend.</li>
+                                <li>Created frontend designs using  <em>Figma</em>.</li>
+                                <li>Employed  <em>PHP</em> for the backend development.</li>
+                                <li>Designed the database with  <em>Entity-Relationship Diagram (ERD</em>) and  <em>normalization</em>.</li>
+                                <li>Implemented a chat feature enabling direct communication between renters and owners.</li>
+                            </ul>
+                        </div>
+                        <a href="" class="link">
+                            See live <i class="fa-solid fa-angles-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Card ends  -->
+
+                <!-- Card starts  -->
+                <div class="card box-shadow">
+                    <img src="./img/projects/web/projectforumx.png"
+                        alt="Project 3">
+                    <div class="project-content">
+                        <div class="h2 project-title">Project Forum X</div>
+                        <div class="secondary-text">
+                            <ul> 
+                                <li>Developed a dynamic online forum using <em>PHP</em> and <em>Bootstrap</em>.</li>
+                                <li>Created a user-friendly and responsive web interface for seamless user experience.</li>
+                                <li>Utilized <em>CRUD (Create, Read, Update, Delete)</em> operations for managing threads and comments.</li>
+                                <li>Secure <em>password hashing</em> and <em>user authentication</em> for data protection.</li>
+                                <li>Utilized sessions to track user login status and access permissions.</li>
+                                <li>Included search functionality for users to easily find relevant discussions.</li>
+                            </ul>
+                        </div>
+                        <a href="" class="link">
+                            See demo <i class="fa-solid fa-angles-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Card ends  -->
+
+                <!-- Card starts  -->
+                <div class="card box-shadow">
+                    <img src="./img/projects/web/evernotenexus.png"
+                        alt="Project 4">
+                    <div class="project-content">
+                        <div class="h2 project-title">EverNote Nexus</div>
+                        <div class="secondary-text">
+                            <ul> 
+                                <li>Developed a digital note-taking platform that empowers users to organize their thoughts, ideas, and tasks efficiently.</li>
+                                <li>Developed using the <em>MERN stack (MongoDB, Express.js, React, Node.js)</em>.</li>
+                                <li>Used <em>cloud-based</em> storage which ensures data safety and accessibility across devices.</li>
+                                <li>Implemented <em>user authentication</em> for personalized note management.</li>
+                            </ul>
+                        </div>
+                        <a href="" class="link">
+                            See demo <i class="fa-solid fa-angles-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Card ends  -->
+                
+            </div>
+            <!-- Card wrapper for web development projects end here  -->
+
+            <!-- Card wrapper for C++ projects start here  -->
+            <div class="cards cards-wrapper" id="cpp" data-tab-content>
+
+                <!-- Card starts  -->
+                <div class="card box-shadow">
+                    <img src="./img/projects/cpp/mazerunner.png"
+                        alt="Project 1">
+                    <div class="project-content">
+                        <div class="h2 project-title">Maze Runner</div>
+                        <div class="secondary-text">
+                            <ul> 
+                                <li>Collaboratively developed a CLI-based maze game using <em>C++</em> with a skilled teammate, that challenges players to navigate through a maze.</li>
+                                <li>Applied <em>Object-Oriented Programming (OOP)</em> principles to structure the code efficiently.</li>
+                                <li>Utilized <em>polymorphism, inheritance, and encapsulation</em> to create modular and maintainable code.</li>
+                                <li>Utilized C++ <em>classes and objects</em> to represent game entities such as the maze, player, and obstacles.</li>
+                            </ul>
+                        </div>
+                        <a href="" class="link">
+                            See code <i class="fa-solid fa-angles-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Card ends  -->
+
+                <!-- Card starts  -->
+                <div class="card box-shadow">
+                    <img src="./img/projects/cpp/githubauto.png"
+                        alt="Project 2">
+                    <div class="project-content">
+                        <div class="h2 project-title">GitHub Automation</div>
+                        <div class="secondary-text">
+                            <ul> 
+                                <li>Developed a <em>GitHub</em> automation tool in <em>C++</em> for streamlined repository creation.</li>
+                                <li>Utilized the <em></em>GitHub API to interact with GitHub repositories programmatically.</li>
+                                <li>Enables users to create both local and remote GitHub repositories.</li>
+                                <li>Provides flexibility to specify the repository name and local directory path as command-line arguments.</li>
+                                <li>Automatically adds a '.gitignore' file as an initial commit for project version control.</li>
+                                <li>Enhances developer productivity by simplifying the repository setup process.</li>
+                            </ul>
+                        </div>
+                        <a href="" class="link">
+                            See code <i class="fa-solid fa-angles-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Card ends  -->
+
+                <!-- Card starts  -->
+                <div class="card box-shadow">
+                    <div id="pong-img"> </div>
+                    <div class="project-content">
+                        <div class="h2 project-title">Pong Game</div>
+                        <div class="secondary-text">
+                            <ul> 
+                                <li>Created a Command Line Interface (CLI) based Pong game using <em>C++</em>.</li>
+                                <li>Offers an engaging and interactive gaming experience within the terminal environment.</li>
+                                <li>Implemented classic Pong gameplay with paddle control and ball movement.</li>
+                                <li>Integrated scoring and win condition tracking.</li>
+                                <li>Ensured <em>code modularity and reusability</em> for potential future enhancements.</li>
+                            </ul>
+                        </div>
+                        <a href="" class="link">
+                            See code <i class="fa-solid fa-angles-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Card ends  -->
+                
+            </div>
+            <!-- Card wrapper for C++ projects end here  -->
+
+            <!-- Card wrapper for Python projects start here  -->
+            <div class="cards cards-wrapper" id="python" data-tab-content>
+                
+                <!-- Card starts  -->
+                <div class="card box-shadow">
+                    <img src="./img/projects/python/stockwatcher.png"
+                        alt="Project 3">
+                    <div class="project-content">
+                        <div class="h2 project-title">Stock Watcher</div>
+                        <div class="secondary-text">
+                            <ul> 
+                                <li>Developed a real-time stock price tracking application for effortless monitoring of chosen stocks.</li>
+                                <li>Provides continuous updates on stock prices and percentage changes.</li>
+                                <li>Built with <em>HTML, CSS, and JavaScript</em> on the frontend.</li>
+                                <li>Utilized <em>Flask</em> for the backend.</li>
+                                <li>Utilized <em>yfinance</em> as the data source for stock price information.</li>
+                            </ul>
+                        </div>
+                        <a href="" class="link">
+                            See code <i class="fa-solid fa-angles-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Card ends  -->
+
+            </div>
+            <!-- Card wrapper for Python projects end here  -->
+        </div>
+        <!-- card div ends here  -->
+
+        <!-- four boc div starts here  -->
+        <div class="about">
+            <h1 class="h1">About</h1>
+            <div class="fourbox" id="about">
+                <!-- Education  -->
+                <div class="box box-shadow" id="education">
+                    <h2 class="h2">Education</h2>
+                    <div class="container">
+                        <div class="uni">
+                            <h3 class="h3">Bachelor of Engineering in Software Engineering</h3>
+                            <h4 class="h4">NED University of Engineering & Technology</h4>
+                            <div class="secondary-text">
+                                <p>09/2021 - Present</p>
+                                <p>Current CGPA: 3.933</p>
+                            </div>
+                        </div>
+                        <div class="college">
+                            <h3 class="h3">Intermediate (Pre-Engineering)</h3>
+                            <h4 class="h4">ASF Intermediate College</h4>
+                            <div class="secondary-text">
+                                <p>09/2019 - 08/2021</p>
+                                <p>A-1 grade with 94.18%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievements -->
+                <div class="box box-shadow" id="achievements">
+                    <h2 class="h2">Achievements</h2>
+                    <div class="container">
+                        <div class="achievement">
+                            <h3 class="h3">COO, The Refiners</h3>
+                            <p class="secondary-text">Organised a coding competition i.e. PYCON'23 in NED University of
+                                Engineering & Technology
+                            </p>
+                        </div>
+                        <div class="achievement">
+                            <h3 class="h3">Selected in top 52 from Pakistan for NPTC-25 (2020)</h3>
+                            <p class="secondary-text"> Qualified the screening test for 25th National Physics Talent
+                                Contest, 2020</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interests  -->
+                <div class="box box-shadow" id="interests">
+                    <h2 class="h2">Interests</h2>
+                    <div class="container">
+                        <div>
+                            <p class="pill">Programming</p>
+                            <p class="pill">Web Development</p>
+                        </div>
+                        <div>
+                            <p class="pill">Automation</p>
+                            <p class="pill">AI</p>
+                            <p class="pill">Cybersecurity</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Language  -->
+                <div class="box box-shadow" id="languages">
+                    <h2 class="h2">Languages</h2>
+                    <div class="container">
+                        <div class="language">
+                            <h4 class="h3">English</h4>
+                            <p class="secondary-text">Native or Bilingual Proficiency</p>
+                        </div>
+                        <div class="language">
+                            <h4 class="h3">Urdu</h4>
+                            <p class="secondary-text">Native or Bilingual Proficiency</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- four box div ends here -->
+
+        <!-- contact section div starts here  -->
+        <div class="contact" id="contact">
+            <div class="left-div box-shadow">
+                <h1 class="h1">Contact</h1>
+                <div>
+                    <a href="mailto:muazzamkhan1802@icloud.com" class="text"><i class="fa-regular fa-envelope"></i>
+                        muazzamkhan1802@icloud.com</a>
+                    <a href="https://www.linkedin.com/in/muazzam-khan-275351241/" class="text"><i
+                            class="fa-brands fa-linkedin"></i> Muazzam
+                        Khan</a>
+                    <a href="https://github.com/Muazzamkhan03" class="text"><i class="fa-brands fa-github"></i>
+                        Muazzamkhan03</a>
+                </div>
+            </div>
+            <div class="right-div box-shadow">
+                <h1 class="h1">Send me a message</h1>
+                <div class="container">
+                    <div class="form">
+                        <div class="field">
+                            <input type="text" id="name" name="name" placeholder="Name" class="text">
+                        </div>
+                        <div class="field">
+                            <input type="email" id="email" name="email" placeholder="Email" class="text">
+                        </div>
+                        <div class="field">
+                            <input type="subject" id="subject" name="subject" placeholder="Subject" class="text">
+                        </div>
+
+                        <div class="description">
+                            <textarea id="description" name="description" rows="5" cols="50" placeholder="Description"
+                                class="text" required></textarea><br><br>
+                        </div>
+                        <button class="button">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- contact section div ends here  -->
+    </div>
+
+    <!-- footer starts here  -->
+    <div class="footer">
+        <p class="text">&copy; 2023 Muazzam Khan | All rights reserved</p>
+    </div>
+
+    <!-- footer ends here  -->
+
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
 </html>

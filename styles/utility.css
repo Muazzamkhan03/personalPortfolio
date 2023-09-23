@@ -1,12 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
 :root{
-    --background-color: #222222;
-    --secondary-background: #111111;
-    --accent: #009688;
-    --highlight: #FFA500;
-    --text: #CCCCCC;
-    --white: #FFFFFF;
-    --heading: #00BFA5;
-    --sub-heading: #FFC400;
-    --input-text: #333333;
+    --background-color: rgb(25,25,25);
+    --secondary-background: rgb(15,15,15);
+    --button: #3498db;
+    --text:  #E5E0DF;
+    --secondary-text: #838282;
+    --tertiary-text: #CDCDCD;
+    --small-links: #d2cac8;
+    --heading: #FFFFFF;
 }
 
+.active{
+    color: var(--button) !important;
+}
+
+.button {
+    background-color: var(--button) !important;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.box-shadow{
+    box-shadow: 0 5px 5px 2px rgb(0, 0, 0) !important;
+}
+
+.h1{
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 42px !important;
+}
+
+.h2{
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 30px !important;
+}
+
+.h3{
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 21px !important;
+}
+
+.h4{
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 15px !important;
+    color: #FFFFFF;
+}
+
+.text{
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 17px !important;
+}
+
+.secondary-text{
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 14px !important;
+}
+
+.link{
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 12px !important;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.link i{
+    transition: color 0.3s;
+}
+
+.link:hover{
+    color: #3498db;
+}
+
+.link:hover i{
+    color: #3498db;
+}
+
+.project-title{
+    color: #3498db !important;
+}
+
+/* Fonts on phone  */
+@media only screen and (max-width: 600px){
+    .h1{
+        font-size: 26px !important;
+    }
+    
+    .h2{
+        font-size: 22px !important;
+    }
+    
+    .h3{
+        font-size: 18px !important;
+    }
+    
+    .h4{
+        font-size: 14px !important;
+    }
+    
+    .text{
+        font-size: 15px !important;
+    }
+    
+    .secondary-text{
+        font-size: 12px !important;
+    }
+
+    .link{
+        font-size: 10px !important;
+    }
+}
